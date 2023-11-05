@@ -1,0 +1,144 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color:hsl(233, 47%, 7%);
+        
+    
+}
+
+.container{
+    display: flex;
+}
+.left{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    width: 569px;
+    height: 446px;
+    border-radius:8px 0 0 8px;
+}
+
+.left-row>.txt{
+    margin: 4.43rem 7.37rem 3.93rem 4.18rem;
+
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    margin:3.33rem 7.37rem 3.93rem  4.18rem;
+}
+
+.one, .two, .three{
+    display: flex;
+    flex-direction: column;
+}.one, .two{
+    margin-right: 56px;
+}
+
+.stats span{
+    color:hsla(0, 0%, 100%, 0.6);
+}
+
+h1, h3{
+    color:hsl(0, 0%, 100%);
+}
+h2{
+    margin:0 0 1em 0;
+}
+
+.insights{
+    color:#AA59DA;
+}
+img{
+    border-radius:0 8px 8px 0;
+}
+.image{
+    position: relative;
+    height: 446px;
+    
+}
+.overlay{
+    position: absolute;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0px;   
+    background-color:#A155CF;
+    opacity:60%;
+    border-radius:0 8px 8px 0;
+
+}
+
+@media only screen and (max-width:700px){
+    
+    .container{
+
+        display: flex;
+        flex-direction: column-reverse;
+        gap:0px;
+    }
+    .image{
+        width: 327px;
+        height: 244.308px;
+    }
+    img{
+        border-radius: 8px 8px 0 0;
+        width: 327px;
+        height: 244.308px;
+    }
+    .overlay{
+        border-radius: 8px 8px 0 0;
+    }
+    .left{
+        padding-top:3px;
+        width: 327px;
+        height: 541px;
+        text-align: center;
+        border-radius: 0 0 8px 8px;
+    }
+    .left-row{
+        width: 327px;
+        height: 541px;
+    }
+    .left-row>.txt{
+        margin: 2.1875rem 1.875rem 2.1875rem 1.875rem;
+    
+    }
+    .right-row{
+        margin-top:-5px;
+    }
+    h1{
+        font-size:28px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .stats{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+    }
+    span{
+        font-size: 12px;
+        margin:0;
+    }
+    .one, .two{
+        margin:0;
+    }
+    .insights{
+        color:#AA59DA;
+        font-size: 28px;
+    }
+    
+    
+}
